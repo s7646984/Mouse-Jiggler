@@ -160,4 +160,8 @@
     Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
         MsgBox("Freeware: Developed by www.mousejigglers.com.au  ")
     End Sub
+
+    Private Sub ToolStripMenuItemExit_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItemExit.Click
+        End
+    End Sub
 End Class

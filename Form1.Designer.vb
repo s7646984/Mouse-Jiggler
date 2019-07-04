@@ -40,6 +40,7 @@ Partial Class MouseJiggler
         Me.YesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItemExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -104,9 +105,9 @@ Partial Class MouseJiggler
         '
         'ContextMenuStrip
         '
-        Me.ContextMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ActionToolStripMenuItem, Me.SettingToolStripMenuItem, Me.ToolStripMenuItem1})
+        Me.ContextMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ActionToolStripMenuItem, Me.SettingToolStripMenuItem, Me.ToolStripMenuItem1, Me.ToolStripMenuItemExit})
         Me.ContextMenuStrip.Name = "ContextMenuStrip"
-        Me.ContextMenuStrip.Size = New System.Drawing.Size(181, 92)
+        Me.ContextMenuStrip.Size = New System.Drawing.Size(181, 114)
         '
         'ActionToolStripMenuItem
         '
@@ -138,19 +139,19 @@ Partial Class MouseJiggler
         '
         Me.StartMinimisedToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.YesToolStripMenuItem, Me.NoToolStripMenuItem})
         Me.StartMinimisedToolStripMenuItem.Name = "StartMinimisedToolStripMenuItem"
-        Me.StartMinimisedToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.StartMinimisedToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.StartMinimisedToolStripMenuItem.Text = "Start Minimised"
         '
         'YesToolStripMenuItem
         '
         Me.YesToolStripMenuItem.Name = "YesToolStripMenuItem"
-        Me.YesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.YesToolStripMenuItem.Size = New System.Drawing.Size(91, 22)
         Me.YesToolStripMenuItem.Text = "Yes"
         '
         'NoToolStripMenuItem
         '
         Me.NoToolStripMenuItem.Name = "NoToolStripMenuItem"
-        Me.NoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NoToolStripMenuItem.Size = New System.Drawing.Size(91, 22)
         Me.NoToolStripMenuItem.Text = "No"
         '
         'ToolStripMenuItem1
@@ -159,6 +160,12 @@ Partial Class MouseJiggler
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.ToolStripMenuItem1.Text = "About"
         Me.ToolStripMenuItem1.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        '
+        'ToolStripMenuItemExit
+        '
+        Me.ToolStripMenuItemExit.Name = "ToolStripMenuItemExit"
+        Me.ToolStripMenuItemExit.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuItemExit.Text = "Exit"
         '
         'MouseJiggler
         '
@@ -172,6 +179,7 @@ Partial Class MouseJiggler
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnEnable)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "MouseJiggler"
         Me.Opacity = 0.9R
@@ -199,4 +207,5 @@ Partial Class MouseJiggler
     Friend WithEvents YesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItemExit As ToolStripMenuItem
 End Class
